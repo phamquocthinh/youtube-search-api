@@ -32,7 +32,7 @@ class Master extends QueueMaster {
     }
 
     getPosts(lastId, batch) {
-        return Posts.findPosts(lastId, batch)
+        return Posts.findPostsBatch(lastId, batch)
     }
 
     addUrl(data) {

@@ -13,7 +13,7 @@ const Keywords = require(rootPath + '/models/youtube/keywords')
 const Posts = require(rootPath + '/models/youtube/posts')
 
 const Youtube = require('./libs/youtube')
-const youtube = new Youtube('AIzaSyDebYQAMT3gdtkXCTapSq19LGFuGR7SjK0')
+const youtube = new Youtube()
 
 process.on('uncaughtException', error => {
     Logger.error(error)
